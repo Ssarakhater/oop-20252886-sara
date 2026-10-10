@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author sara khater
+ */
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) { 
+        Scanner input =new Scanner (System.in);
+        double up;
+        int c;
+        final double tax=0.14;
+        double t;
+        double st;
+        double total;
+        System.out.println("enter unit price");
+        up =input.nextDouble();
+        System.out.println("enter quantity");
+        c=input.nextInt();
+        st=c*up;
+        t=st*tax;
+        total=t+st;
+        System.out.println("Subtotal="+st+"  "+"tax="+t+"  "+"total="+total);
+               
+        
+        // TODO code application logic here
+    }
+    
+}
