@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication35;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author sara khater
+ */
+public class JavaApplication35 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        char [][] grid=new char[3][4];
+        System.out.println("Enter 3 words (4 letters each):");
+        for(int i=0;i<3;i++){
+        String word=input.next();
+        for(int j=0;j<4;j++){
+        grid[i][j]=word.charAt(j);
+        
+                }
+       
+        }
+        for(int i=0;i<3;i++){ 
+            for(int j=0;j<4;j++){
+                System.out.print(grid[i][j]+" ");
+        }
+             System.out.println(" ");
+        }
+        System.out.print("coulms:");
+         for(int j=0;j<4;j++) {
+             String c="";
+             for(int i=0;i<3;i++){
+            c=c+grid[i][j];
+                    
+            } System.out.print(c+" ");}
+         int v=0;
+         for(int i=0;i<3;i++){
+             for(int j=0;j<4;j++) {
+                 if(grid[i][j]=='a'||grid[i][j]=='e'||grid[i][j]=='o'||grid[i][j]=='i'||grid[i][j]=='y')
+                     v++;
+                     }
+         }
+         System.out.println("");
+         System.out.println("vawels:"+v);
+        
+        
+        // TODO code application logic here
+    }
+    
+}

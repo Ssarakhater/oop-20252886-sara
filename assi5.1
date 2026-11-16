@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication33;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author sara khater
+ */
+public class JavaApplication33 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+        int[]nums=new int[6];
+        System.out.println("enter 6 nubers");
+        for(int i=0;i<nums.length;i++){
+        nums[i]=input.nextInt();
+        }
+        int c=0;
+         for(int i=0;i<nums.length;i++){
+             if(nums[i]>nums[0])
+                 c++;
+                 
+         }
+        
+        for(int i=0;i<nums.length/2;i++){
+        int temp=nums[i];
+        nums[i]=nums[nums.length-1-i];
+        nums[nums.length-1-i]=temp;}
+        System.out.println("Reverse:");
+        for(int i=0;i<nums.length;i++){
+            System.out.println(nums[i]+" ");
+        }
+        int sum=0;
+        for(int i=0;i<nums.length;i++){
+        
+        if(nums[i]%2==0)
+            sum=sum+nums[i];
+        }
+        
+        System.out.println("sum of even numbers:"+sum);
+        
+         System.out.println("Greater than the first number: "+c);
+        // TODO code application logic here
+    }
+    
+}
