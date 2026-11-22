@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication39;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author sara khater
+ */
+public class JavaApplication39 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        student s1=new student("255","nada",3.1);
+        student s2=new student();
+        s2.setGPA(3.8);
+        System.out.println("first student name "+s1.getStudentName());
+        System.out.println("first student ID "+s1.getStudentID());
+        System.out.println("first student GPA "+s1.getGPA());
+         System.out.println("second student name "+s2.getStudentName());
+        System.out.println("second student ID "+s2.getStudentID());
+        System.out.println("second student GPA "+s2.getGPA());
+        
+        // TODO code application logic here
+    }
+    
+}

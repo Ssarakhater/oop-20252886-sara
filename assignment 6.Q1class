@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication39;
+
+/**
+ *
+ * @author sara khater
+ */
+public class student {
+    
+    private String studentID;
+    private String studentName;
+    private double GPA;
+    public student(){
+    studentID="000";
+    studentName="unknown";
+    GPA=0.0;}
+public student(String id,String name,double gpa){
+studentID=id;
+studentName=name;
+GPA=gpa;}    
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public double getGPA() {
+        return GPA;
+    }
+    
+public boolean HonorStudent(){
+if (GPA>=3.5)
+    return true;
+else return false;
+        }
+
+    
+    
+    
+}
